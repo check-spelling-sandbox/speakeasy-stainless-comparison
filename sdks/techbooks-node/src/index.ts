@@ -115,12 +115,12 @@ export class Techbooks extends Core.APIClient {
     }
     if (clientId === undefined) {
       throw new Errors.TechbooksError(
-        "The TECHBOOKS_CLIENT_ID environment variable is missing or empty; either provide it, or instantiate the Techbooks client with an clientId option, like new Techbooks({ clientId: 'My Client ID' }).",
+        "The TECHBOOKS_CLIENT_ID environment variable is missing or empty; either provide it, or instantiate the Techbooks client with a clientId option, like new Techbooks({ clientId: 'My Client ID' }).",
       );
     }
     if (clientSecret === undefined) {
       throw new Errors.TechbooksError(
-        "The TECHBOOKS_CLIENT_SECRET environment variable is missing or empty; either provide it, or instantiate the Techbooks client with an clientSecret option, like new Techbooks({ clientSecret: 'My Client Secret' }).",
+        "The TECHBOOKS_CLIENT_SECRET environment variable is missing or empty; either provide it, or instantiate the Techbooks client with a clientSecret option, like new Techbooks({ clientSecret: 'My Client Secret' }).",
       );
     }
 
