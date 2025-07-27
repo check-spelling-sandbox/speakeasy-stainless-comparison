@@ -229,7 +229,7 @@ describe('instantiate client', () => {
     expect(client.clientSecret).toBe('My Client Secret');
   });
 
-  test('with overriden environment variable arguments', () => {
+  test('with overridden environment variable arguments', () => {
     // set options via env var
     process.env['TECHBOOKS_API_KEY'] = 'another My API Key';
     process.env['TECHBOOKS_CLIENT_ID'] = 'another My Client ID';
