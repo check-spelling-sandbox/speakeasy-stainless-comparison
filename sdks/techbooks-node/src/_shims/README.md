@@ -37,7 +37,7 @@ If the `node` export condition is set, the export map replaces it with `techbook
 
 ### How it works - Type time
 
-All client code imports shim types from `techbooks/_shims/index`, which selects the manual types from `techbooks/_shims/manual-types` if they have been declared, otherwise it exports the auto types from `techbooks/_shims/auto/types`.
+All client code imports shim types from `techbooks/_shims/index`, which selects the manual types from `techbooks/_shims/manual-types` if they have been declared; otherwise, it exports the auto types from `techbooks/_shims/auto/types`.
 
 `techbooks/_shims/manual-types` exports an empty namespace.
 Manually importing `techbooks/shims/node` or `techbooks/shims/web` merges declarations into this empty namespace, so they get picked up by `techbooks/_shims/index`.
