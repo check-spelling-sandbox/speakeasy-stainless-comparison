@@ -6,7 +6,7 @@ import * as components from "../models/components";
 
 export enum SecurityErrorCode {
     Incomplete = "incomplete",
-    UnrecognisedSecurityType = "unrecognized_security_type",
+    UnrecognizedSecurityType = "unrecognized_security_type",
 }
 
 export class SecurityError extends Error {
@@ -23,8 +23,8 @@ export class SecurityError extends Error {
     }
     static unrecognizedType(type: string): SecurityError {
         return new SecurityError(
-            SecurityErrorCode.UnrecognisedSecurityType,
-            `Unrecognised security type: ${type}`
+            SecurityErrorCode.UnrecognizedSecurityType,
+            `Unrecognized security type: ${type}`
         );
     }
 }
