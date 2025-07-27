@@ -776,7 +776,7 @@ declare const Deno: any;
 declare const EdgeRuntime: any;
 type Arch = 'x32' | 'x64' | 'arm' | 'arm64' | `other:${string}` | 'unknown';
 type PlatformName =
-  | 'MacOS'
+  | 'macOS'
   | 'Linux'
   | 'Windows'
   | 'FreeBSD'
@@ -917,7 +917,7 @@ const normalizePlatform = (platform: string): PlatformName => {
   // however it is unknown at the time of writing how to detect if it is running
   if (platform.includes('ios')) return 'iOS';
   if (platform === 'android') return 'Android';
-  if (platform === 'darwin') return 'MacOS';
+  if (platform === 'darwin') return 'macOS';
   if (platform === 'win32') return 'Windows';
   if (platform === 'freebsd') return 'FreeBSD';
   if (platform === 'openbsd') return 'OpenBSD';
